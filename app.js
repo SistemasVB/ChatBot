@@ -109,11 +109,11 @@ const flowHankook = addKeyword(["hankook"]).addAnswer(
 
 const flowFirestone = addKeyword(["Firestone"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en Firestone",
+    "📏 Estas son los precios de las medidas y modelos disponibles en Firestone mas IVA",
     "*Opción 1:*",
     "_Modelo:_ FD663",
     "_Medida:_ 11R22.5",
-    "_Existencia:_ 19",
+    "_Existencia:_ 24",
     "_Uso:_ Tracción",
     "_Precio:_ $8,081.92",
 
@@ -127,14 +127,14 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
     "\n*Opción 3:*",
     "_Modelo:_ FS 591",
     "_Medida:_ 11R22.5",
-    "_Existencia:_ 50",
+    "_Existencia:_ 32",
     "_Uso:_ Dirección",
     "_Precio:_ $7,391.23",
 
     "\n*Opción 4:*",
     "_Modelo:_ FS 591",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 88",
+    "_Existencia:_ 99",
     "_Uso:_ Dirección",
     "_Precio:_ $7,643.11",
 
@@ -162,7 +162,7 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
     "\n*Opción 8:*",
     "_Modelo:_ FT 492",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 0",
+    "_Existencia:_ 13",
     "_Uso:_ Dirección",
     "_Precio:_ $7,167.63",
     
@@ -200,12 +200,20 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
     "_Existencia:_ 0",
     "_Uso:_ Dirección",
     "_Precio:_ $6,815.71",
+    
+    "\n*Opción 14:*",
+    "_Modelo:_ FS 400",
+    "_Medida:_ 315/80R22.5",
+    "_Existencia:_ 8",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,830.72",
 
     // "FD691            11R22.5            4",
     // "FS 561           11R22.5           14",
     // "FS 820           11R22.5            1",
-    // "FS 400         315/80R22.5          8",
     // "TRANSFORCE       195 R15            0",
+    //"FR710             185/60R15          0"
+    //"FT140             205/55R16          0"
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
   ],
   null,
@@ -479,18 +487,18 @@ const flowChina = addKeyword(["china"]).addAnswer(
 
 const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en bridgestone",
+    "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone mas IVA",
     "\n*Opción 1:*",
     "_Modelo:_ M726",
     "_Medida:_ 11R22.5",
-    "_Existencia:_ 30",
+    "_Existencia:_ 50",
     "_Uso:_ Tracción",
     "_Precio:_ $9,602.10",
 
     "\n*Opción 2:*",
     "_Modelo:_ M726",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 35",
+    "_Existencia:_ 70",
     "_Uso:_ Tracción",
     "_Precio:_ $10,147.86",
 
@@ -539,7 +547,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 9:*",
     "_Modelo:_ R249",
     "_Medida:_ 315/80R22.5",
-    "_Existencia:_ 10",
+    "_Existencia:_ 20",
     "_Uso:_ Dirección",
     "_Precio:_ $8,344.61",
 
@@ -560,7 +568,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 12:*",
     "_Modelo:_ R260",
     "_Medida:_ 305/75R24.5",
-    "_Existencia:_ 8",
+    "_Existencia:_ 6",
     "_Uso:_ Dirección",
     "_Precio:_ $10,569.80",
 
@@ -574,7 +582,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 14:*",
     "_Modelo:_ R269",
     "_Medida:_ 295/80R22.5",
-    "_Existencia:_ 5",
+    "_Existencia:_ 10",
     "_Uso:_ Dirección",
     "_Precio:_ $9,769.63",
 
@@ -588,7 +596,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 16:*",
     "_Modelo:_ R283 S",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 1",
+    "_Existencia:_ 30",
     "_Uso:_ Dirección",
     "_Precio:_ $8,911.90",
 
@@ -609,7 +617,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 19:*",
     "_Modelo:_ R283 S",
     "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 3",
+    "_Existencia:_ 33",
     "_Uso:_ Dirección",
     "_Precio:_ $8,054.87",
 
@@ -624,18 +632,18 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
   [flowSecundario]
 );
 
-const flowPrincipal = addKeyword(["hola", "Buenos días", "Martin"])
+const flowPrincipal = addKeyword(["hola", "buenos días", "martin"])
   .addAnswer("🙌 Hola bienvenido al almacen")
   .addAnswer(
     [
       "Escribe una de las siguientes palabras para ver mas detalles",
       "👉 *Bridgestone* para ver medidas bridgestone",
       "👉 *China*  para ver medidas de llanta china",
-      "👉 *DoubleCoin* para ver medidas",
-      "👉 *Firestone* para ver medidas",
-      "👉 *Hankook* para ver medidas",
-      "👉 *Roadmaster* para ver medidas",
-      "👉 *Yokohoma* para ver medidas",
+      "👉 *DoubleCoin* para ver medidas de llanta DoubleCoin",
+      "👉 *Firestone* para ver medidas de llanta Firestone",
+      "👉 *Hankook* para ver medidas de llanta Hankook",
+      "👉 *Roadmaster* para ver medidas de llanta Roadmaster",
+      "👉 *Yokohoma* para ver medidas de llanta Yokohoma",
     ],
     null,
     null,
