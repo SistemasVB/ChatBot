@@ -15,7 +15,7 @@ const flowSecundario = addKeyword(["2", "siguiente"]).addAnswer([
 
 const flowYokohoma = addKeyword(["Yokahama"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en YOKAHAMA",
+    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en YOKAHAMA",
     "*Modelo*            *Medida*      *Existencia*",
     "101ZL SPEC-2BWTL    11R22.5            8",
     "101ZL SPEC-2BWTL    11R24.5            1",
@@ -29,7 +29,7 @@ const flowYokohoma = addKeyword(["Yokahama"]).addAnswer(
 
 const flowRoadmaster = addKeyword(["Roadmaster"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en ROADMASTER",
+    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en ROADMASTER",
     "*Opción 1:*",
     "_Modelo:_ RM 170",
     "_Medida:_ 235/75R17.5",
@@ -61,7 +61,7 @@ const flowRoadmaster = addKeyword(["Roadmaster"]).addAnswer(
 
 const flowHankook = addKeyword(["hankook"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en Hankook",
+    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en Hankook",
     "---------- *HANKOOK* ----------",
     "*Opción 1:*",
     "_Modelo:_ AH35",
@@ -109,7 +109,7 @@ const flowHankook = addKeyword(["hankook"]).addAnswer(
 
 const flowFirestone = addKeyword(["Firestone"]).addAnswer(
   [
-    "📏 Estas son los precios de las medidas y modelos disponibles en Firestone mas IVA",
+    "📏 Estas son los precios de las medidas y modelos disponibles en Firestone *mas IVA*",
     "*Opción 1:*",
     "_Modelo:_ FD663",
     "_Medida:_ 11R22.5",
@@ -223,7 +223,7 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
 
 const flowDoubleCoin = addKeyword(["DoubleCoin", "double coin"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles en DOUBLE COIN",
+    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en DOUBLE COIN",
     "*Modelo*       *Medida*      *Existencia*",
     "RT 606          11R22.5                 5",
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
@@ -235,7 +235,7 @@ const flowDoubleCoin = addKeyword(["DoubleCoin", "double coin"]).addAnswer(
 
 const flowChina = addKeyword(["china"]).addAnswer(
   [
-    "📏 Estas son las medidas y modelos disponibles disponibles",
+    "📏 Estas son los precios *netos* de las medidas y modelos disponibles disponibles",
     "---------- *Turnpike* ----------",
     "*Opción 1:*",
     "_Modelo:_ GA257",
@@ -487,7 +487,7 @@ const flowChina = addKeyword(["china"]).addAnswer(
 
 const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
   [
-    "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone mas IVA",
+    "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone *mas IVA*",
     "\n*Opción 1:*",
     "_Modelo:_ M726",
     "_Medida:_ 11R22.5",
