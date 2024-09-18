@@ -127,14 +127,14 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
     "\n*Opción 3:*",
     "_Modelo:_ FS 591",
     "_Medida:_ 11R22.5",
-    "_Existencia:_ 32",
+    "_Existencia:_ 60",
     "_Uso:_ Dirección",
     "_Precio:_ $7,391.23",
 
     "\n*Opción 4:*",
     "_Modelo:_ FS 591",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 99",
+    "_Existencia:_ 81",
     "_Uso:_ Dirección",
     "_Precio:_ $7,643.11",
 
@@ -148,7 +148,7 @@ const flowFirestone = addKeyword(["Firestone"]).addAnswer(
     "\n*Opción 6:*",
     "_Modelo:_ FS 591",
     "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 18",
+    "_Existencia:_ 16",
     "_Uso:_ Dirección",
     "_Precio:_ $8,766.84",
     
@@ -671,7 +671,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 1:*",
     "_Modelo:_ M726",
     "_Medida:_ 11R22.5",
-    "_Existencia:_ 50",
+    "_Existencia:_ 48",
     "_Uso:_ Tracción",
     "_Precio:_ $9,602.10",
 
@@ -685,7 +685,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 3:*",
     "_Modelo:_ M726",
     "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 19",
+    "_Existencia:_ 11",
     "_Uso:_ Tracción",
     "_Precio:_ $8,712.47",
 
@@ -727,7 +727,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 9:*",
     "_Modelo:_ R249",
     "_Medida:_ 315/80R22.5",
-    "_Existencia:_ 10",
+    "_Existencia:_ 20",
     "_Uso:_ Dirección",
     "_Precio:_ $8,344.61",
 
@@ -776,7 +776,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 16:*",
     "_Modelo:_ R283 S",
     "_Medida:_ 11R24.5",
-    "_Existencia:_ 30",
+    "_Existencia:_ 26",
     "_Uso:_ Dirección",
     "_Precio:_ $8,911.90",
 
@@ -790,7 +790,7 @@ const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
     "\n*Opción 18:*",
     "_Modelo:_ R283 S",
     "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 10",
+    "_Existencia:_ 0",
     "_Uso:_ Dirección",
     "_Precio:_ $8,465.78",
 
