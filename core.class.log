@@ -1,0 +1,54 @@
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214646452989@s.whatsapp.net',
+    fromMe: false,
+    id: '9BFEEB5F7B7E744CA66F2DCC58224568',
+    participant: undefined
+  },
+  messageTimestamp: 1729720753,
+  pushName: 'Kevin Vargas 🥸',
+  broadcast: false,
+  message: Message {
+    audioMessage: AudioMessage {
+      url: 'https://mmg.whatsapp.net/v/t62.7117-24/31273067_549377587641035_1265384114663942051_n.enc?ccb=11-4&oh=01_Q5AaINLAisW9Q02m034A_iFELFEeEgQv2Rb2vxXcbJAzYST3&oe=6740E749&_nc_sid=5e03e0&mms3=true',
+      mimetype: 'audio/ogg; codecs=opus',
+      fileSha256: [Uint8Array],
+      fileLength: [Long],
+      seconds: 2,
+      ptt: true,
+      mediaKey: [Uint8Array],
+      fileEncSha256: [Uint8Array],
+      directPath: '/v/t62.7117-24/31273067_549377587641035_1265384114663942051_n.enc?ccb=11-4&oh=01_Q5AaINLAisW9Q02m034A_iFELFEeEgQv2Rb2vxXcbJAzYST3&oe=6740E749&_nc_sid=5e03e0',
+      mediaKeyTimestamp: [Long],
+      waveform: [Uint8Array]
+    },
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: '_event_voice_note__53f67469-089e-44e3-be4e-30899a35de36',
+  from: '5214646452989'
+}
+[handleMsg]:  {
+  key: {
+    remoteJid: '5214641660172@s.whatsapp.net',
+    fromMe: false,
+    id: '2EEE42F94D3653BD85EA5DFDD96B2265',
+    participant: undefined
+  },
+  messageTimestamp: 1729721382,
+  pushName: '...',
+  broadcast: false,
+  message: Message {
+    conversation: 'No we, sigo en hora de comida',
+    messageContextInfo: MessageContextInfo {
+      deviceListMetadata: [DeviceListMetadata],
+      deviceListMetadataVersion: 2,
+      messageSecret: [Uint8Array]
+    }
+  },
+  body: 'No we, sigo en hora de comida',
+  from: '5214641660172'
+}

@@ -13,512 +13,24 @@ const flowSecundario = addKeyword(["2", "siguiente"]).addAnswer([
   "Se ha terminado el flujo, vuelva a mandar un hola para ver el menú.",
 ]);
 
-const flowYokohoma = addKeyword(["Yokahama"]).addAnswer(
+const flowINDUSTRIAL = addKeyword(["INDUSTRIAL"]).addAnswer(
   [
-    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en YOKAHAMA",
-    "*Modelo*            *Medida*      *Existencia*",
-    "101ZL SPEC-2BWTL    11R22.5            8",
-    "101ZL SPEC-2BWTL    11R24.5            1",
-    "RY537 TL          295/80R22.5          2",
-    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
-  ],
-  null,
-  null,
-  [flowSecundario]
-);
-
-const flowRoadmaster = addKeyword(["Roadmaster"]).addAnswer(
-  [
-    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en ROADMASTER",
-    "*Opción 1:*",
-    "_Modelo:_ RM 170",
-    "_Medida:_ 235/75R17.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Lineal",
-    "_Precio:_ $3,750.00",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ RM 170 ",
-    "_Medida:_ 245/70R19.5",
-    "_Existencia:_ 21",
-    "_Uso:_ Lineal",
-    "_Precio:_ $3,828.00",
+    "📏 Estock disponible en esta medida",
     
-    "\n*Opción 3:*",
-    "_Modelo:_ RM 272",
-    "_Medida:_ 215/75R17.5",
-    "_Existencia:_ 10",
-    "_Uso:_ Lineal",
-    "_Precio:_ $3,950.00",
-
-    // "RM 230          11R24.5             11",
-    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
-  ],
-  null,
-  null,
-  [flowSecundario]
-);
-
-const flowHankook = addKeyword(["hankook"]).addAnswer(
-  [
-    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en Hankook",
-    "---------- *HANKOOK* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ AH35",
-    "_Medida:_ 225/70R19.5",
-    "_Existencia:_ 7",
-    "_Uso:_ Lineal",
-    "_Precio:_ $5,000.00",
-    
-    "\n*Opción 2:*",
-    "_Modelo:_ TL21",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Arrastre",
-    "_Precio:_ $5,550.00",
-    
-    "\n*Opción 3:*",
-    "_Modelo:_ AL21",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 2",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,400.00",
-
-    // "AH37             11R24.5            0",
-    // "H724            185/60R14           4",
-    // "DYNAPRO AT2     235/85R16           2",
-    // "AL21 LINEAL      11R24.5           12",
-    // "AH35           215/75R17.5          7",
-    // "AL21           295/75R22.5          8",
-    // "DM04 T           11R24.5            1",
-    // "RA33            265/60R18           8",
-    // "--------------- AURORA -----------------",
-    // "UZ02 T           11R24.5            1",
-    // "--------------- AUFINE -----------------",
-    // "AF18 MIXTO       11R24.5            1",
-    // "------------- CONTINENTAL --------------",
-    // "CONTINENTAL LT  225/75R16           2",
-    // "--------------- GOODYEAR ---------------",
-    // "WRANGLER        P235/75R15          4",
-    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
-  ],
-  null,
-  null,
-  [flowSecundario]
-);
-
-const flowFirestone = addKeyword(["Firestone"]).addAnswer(
-  [
-    "📏 Estas son los precios de las medidas y modelos disponibles en Firestone *mas IVA*",
-    "*Opción 1:*",
-    "_Modelo:_ FD663",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 24",
-    "_Uso:_ Tracción",
-    "_Precio:_ $8,081.92",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ FD663",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 83",
-    "_Uso:_ Tracción",
-    "_Precio:_ $8,587.57",
-
-    "\n*Opción 3:*",
-    "_Modelo:_ FS 591",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 60",
-    "_Uso:_ Dirección",
-    "_Precio:_ $7,391.23",
-
-    "\n*Opción 4:*",
-    "_Modelo:_ FS 591",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 81",
-    "_Uso:_ Dirección",
-    "_Precio:_ $7,643.11",
-
-    "\n*Opción 5:*",
-    "_Modelo:_ FS 591",
-    "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Dirección",
-    "_Precio:_ $7,815.73",
-
-    "\n*Opción 6:*",
-    "_Modelo:_ FS 591",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 16",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,766.84",
-    
-    "\n*Opción 7:*",
-    "_Modelo:_ FS 561",
-    "_Medida:_ 225/70R19.5",
-    "_Existencia:_ 8",
-    "_Uso:_ Dirección",
-    "_Precio:_ $6,385.08",
-    
-    "\n*Opción 8:*",
-    "_Modelo:_ FT 492",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 13",
-    "_Uso:_ Dirección",
-    "_Precio:_ $7,167.63",
-    
-    "\n*Opción 9:*",
-    "_Modelo:_ FS 561",
-    "_Medida:_ 215/75R17.5",
-    "_Existencia:_ 20",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,685.11",
-    
-    "\n*Opción 10:*",
-    "_Modelo:_ FD 694",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 16",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,656.93",
-    
-    "\n*Opción 11:*",
-    "_Modelo:_ FD 694",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 16",
-    "_Uso:_ Dirección",
-    "_Precio:_ $9,178.15",
-    
-    "\n*Opción 12:*",
-    "_Modelo:_ FT 492",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 8",
-    "_Uso:_ Dirección",
-    "_Precio:_ $6,983.23",
-    
-    "\n*Opción 13:*",
-    "_Modelo:_ FT 492",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Dirección",
-    "_Precio:_ $6,815.71",
-    
-    "\n*Opción 14:*",
-    "_Modelo:_ FS 400",
-    "_Medida:_ 315/80R22.5",
-    "_Existencia:_ 8",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,830.72",
-
-    // "FD691            11R22.5            4",
-    // "FS 561           11R22.5           14",
-    // "FS 820           11R22.5            1",
-    // "TRANSFORCE       195 R15            0",
-    //"FR710             185/60R15          0"
-    //"FT140             205/55R16          0"
-    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
-  ],
-  null,
-  null,
-  [flowSecundario]
-);
-
-const flowDoubleCoin = addKeyword(["DoubleCoin", "double coin"]).addAnswer(
-  [
-    "📏 Estas son los precios *netos* de las medidas y modelos disponibles en DOUBLE COIN",
-    "*Modelo*       *Medida*      *Existencia*",
-    "RT 606          11R22.5                 5",
-    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
-  ],
-  null,
-  null,
-  [flowSecundario]
-);
-
-const flowChina = addKeyword(["china"]).addAnswer(
-  [
-    "📏 Estas son los precios *netos* de las medidas y modelos disponibles disponibles",
-    "---------- *TURNPIKE* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ GA257",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 54",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,500.00",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ D691",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 2",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,370.00",
-
-    "\n*Opción 3:*",
-    "_Modelo:_ GA257",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 47",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,100.00",
-
-    "\n*Opción 4:*",
-    "_Modelo:_ M879",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 10",
-    "_Uso:_ Mixta",
-    "_Precio:_ $3,400.00",
-
-    "\n*Opción 5:*",
-    "_Modelo:_ GA 336",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 4",
-    "_Uso:_ Mixta",
-    "_Precio:_ $4,100.00",
-
-    "\n*Opción 6:*",
-    "_Modelo:_ GA 336",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 8",
-    "_Uso:_ Mixta",
-    "_Precio:_ $4,500.00",
-
-    "\n*Opción 7:*",
-    "_Modelo:_ GA 277",
-    "_Medida:_ 235/75R17.5",
-    "_Existencia:_ 6",
-    "_Uso:_ ",
-    "_Precio:_ 2,950.00",
-
-    "\n*Opción 8:*",
-    "_Modelo:_ GA 277",
-    "_Medida:_ 215/75R17.5",
-    "_Existencia:_ 5",
-    "_Uso:_ ",
-    "_Precio:_ 2,750.00",
-
-    "\n*Opción 9:*",
-    "_Modelo:_ GD 267",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 50",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,450.00",
-
-    "\n*Opción 10:*",
-    "_Modelo:_ GD 267",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 38",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,770.00",
-
-    "\n*Opción 11:*",
-    "_Modelo:_ GD 267",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,400.00",
-
-    "\n*Opción 12:*",
-    "_Modelo:_ GD 267",
-    "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 4",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,200.00",
-
-    "\n*Opción 13:*",
-    "_Modelo:_ GD 277",
-    "_Medida:_ 215/75R17.5",
-    "_Existencia:_ 5",
-    "_Uso:_ Lineal",
-    "_Precio:_ $2,750.00",
-
-    "\n*Opción 14:*",
-    "_Modelo:_ GA 277",
-    "_Medida:_ 235/75R17.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Lineal",
-    "_Precio:_ $2,950.00",
-
-    "\n",
-    "---------- *BLACKLION* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ BD171",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Tracción",
-    "_Precio:_ ",
-
-    "*\nOpción 2:*",
-    "_Modelo:_ BD171",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 2",
-    "_Uso:_ Tracción",
-    "_Precio:_ ",
-
-    "*\nOpción 3:*",
-    "_Modelo:_ BD189",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 0",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    "\n",
-    "---------- *TOLEDO* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ DR520",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 58",
-    "_Uso:_ Tracción",
-    "_Precio:_ ",
-    
-    "*\nOpción 2:*",
-    "_Modelo:_ DR520",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Tracción",
-    "_Precio:_ ",
-
-    "\n*Opción 3:*",
-    "_Modelo:_ DR120",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 22",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,250.00",
-    
-    "\n*Opción 4:*",
-    "_Modelo:_ DR120",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 22",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,250.00",
-
-    "\n*Opción 5:*",
-    "_Modelo:_ DR120",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 42",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,290.00",
-    "\n",
-    "---------- *MIRAGE* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ MG111",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 79",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,100.00",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ MG111",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 11",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,550.00",
-    
-    "\n*Opción 3:*",
-    "_Modelo:_ MG312",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,305.00",
-    "\n",
-    "---------- *PACE* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ PM216",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 53",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,560.00",
-    
-    "*\nOpción 2:*",
-    "_Modelo:_ PM216",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Dirección",
-    "_Precio:_ ",
-
-    "*\nOpción 3:*",
-    "_Modelo:_ PM216",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ Dirección",
-    "_Precio:_ $3,340.00",
-
-    "\n*Opción 4:*",
-    "_Modelo:_ PM516",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 28",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,060.00",
-
-    "\n",
-    "---------- *LANDY* ----------",
-    "*Opción 1:*",
-    "_Modelo:_ DD398",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 4",
-    "_Uso:_ Tracción",
-    "_Precio:_ $4,370.00",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ DT966",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 10",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,370.00",
-
-    "\n*Opción 3:*",
-    "_Modelo:_ DS968",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 1",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,100.00",
-
-    // "DT966         255/70R22.5          5",
-    // "DT966         275/70R22.5          1",
-    // "DS966           11R24.5            1",
-    "\n",
-    "---------- COMPASAL ----------",
-
-    "\n*Opción 1:*",
-    "_Modelo:_ CPS21 16C",
-    "_Medida:_ 255/70R22.5",
-    "_Existencia:_ 0",
-    "_Uso:_ ",
-    "_Precio:_ ",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ CPS60 M",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 1",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 3:*",
-    "_Modelo:_ CPD86",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 0",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 4:*",
-    "_Modelo:_ CPS21",
-    "_Medida:_ 235/75R17.5",
-    "_Existencia:_ 0",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    "\n",
-    // "CPS21 16C     255/70R22.5          0",
-    // "CPS60 M         11R24.5            1",
-    "---------- *INDUSTRIAL* ----------",
     "*Opción 1:*",
     "_Modelo:_ TRACSA SOL 1012",
     "_Medida:_ 12-16.5",
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
-    
+
     "*\nOpción 2:*",
     "_Modelo:_ SUPERGUIDER SKS1",
     "_Medida:_ 11L-16",
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
-    
+
     "*\nOpción 3:*",
     "_Modelo:_ TOP TRUST R4 12C TL",
     "_Medida:_ 19.5L24",
@@ -553,111 +65,29 @@ const flowChina = addKeyword(["china"]).addAnswer(
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
-    
+
     "*\nOpción 8:*",
     "_Modelo:_ STONETRAC 12PRO",
     "_Medida:_ 11L-16",
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
-    "\n",
-    // "ENKIL           19.5L-24           0",
-    // "R24 XGLA2        14.00 R24.5            0",
-    "---------- MARCAS VARIAS ----------",
-    "\n*Opción 1:*",
-    "_Modelo:_ BT 168N",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 36",
-    "_Uso:_ Mixta",
-    "_Precio:_ $4,150.00",
-
-    "\n*Opción 2:*",
-    "_Modelo:_ KASPEN HS205",
-    "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 10",
-    "_Uso:_ ",
-    "_Precio:_ ",
     
-    "\n*Opción 3:*",
-    "_Modelo:_ EUDEMON UD120",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 1",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 4:*",
-    "_Modelo:_ MAXTREC SU-800",
-    "_Medida:_ 265/70R17",
-    "_Existencia:_ 4",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 5:*",
-    "_Modelo:_ POTENZA S001",
-    "_Medida:_ 225/40R18",
-    "_Existencia:_ 1",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 6:*",
-    "_Modelo:_ AMULET AT 501",
-    "_Medida:_ 225/70R19.5",
-    "_Existencia:_ 8",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 7:*",
-    "_Modelo:_ KAPSEM HS205",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 10",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 8:*",
-    "_Modelo:_ GOODRIDE CR989",
-    "_Medida:_ 11R22.5",
-    "_Existencia:_ 6",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 9:*",
-    "_Modelo:_ GOODRIDE CR989",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 4",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 10:*",
-    "_Modelo:_ TOYO NEVA",
-    "_Medida:_ 225/65R16C",
+    "*\nOpción 9:*",
+    "_Modelo:_ ENKIL",
+    "_Medida:_ 19.5L-24",
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
     
-    "\n*Opción 11:*",
-    "_Modelo:_ DOUBLE STAR DSR668",
-    "_Medida:_ 11R25.5",
+    "*\nOpción 10:*",
+    "_Modelo:_ R24 XGLA2",
+    "_Medida:_ 14.00 R24.5",
     "_Existencia:_ 0",
     "_Uso:_ ",
     "_Precio:_ ",
     
-    "\n*Opción 12:*",
-    "_Modelo:_ ROADX RH630",
-    "_Medida:_ 305/75R24.5",
-    "_Existencia:_ 12",
-    "_Uso:_ ",
-    "_Precio:_ ",
-    
-    "\n*Opción 13:*",
-    "_Modelo:_ ROUTE CONTROL S",
-    "_Medida:_ 1124.5",
-    "_Existencia:_ 0",
-    "_Uso:_ ",
-    "_Precio:_ ",
-
-    // "HS205         285/75R24.5         10",
-    // "UD120           11R24.5            1",
-    // "SU-800         265/70R17           4",
+  
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
   ],
   null,
@@ -665,146 +95,1126 @@ const flowChina = addKeyword(["china"]).addAnswer(
   [flowSecundario]
 );
 
-const flowBridgestone = addKeyword(["bridgestone"]).addAnswer(
+const flow22565R16C = addKeyword(["225/65R16C"]).addAnswer(
   [
-    "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone *mas IVA*",
+    "📏 Estock disponible en esta medida",
+    
+    "\n*Opción 1:*",
+    "_Modelo:_ NEVA",
+    "_Medida:_ TOYO",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+  
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow22540R18 = addKeyword(["225/40R18"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+    
+    "\n*Opción 1:*",
+    "_Modelo:_  S001",
+    "_Marca:_  POTENZA",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+    
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow26570R17 = addKeyword(["265/70R17"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+    
+    "\n*Opción 1:*",
+    "_Modelo:_  SU-800",
+    "_Marca:_ MAXTREC",
+    "_Existencia:_ 4",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow20555R16 = addKeyword(["205/55R16"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ FT140",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow18560R15 = addKeyword(["185/60R15"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ FR710",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow195R15 = addKeyword(["195 R15"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ TRANSFORCE",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flowP23575R15 = addKeyword(["P235/75R15"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ WRANGLER",
+    "_Marca:_ GOODYEAR",
+    "_Existencia:_ 4",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow27570R225 = addKeyword(["275/70R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ DT966",
+    "_Marca:_ LANDY",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow22575R16 = addKeyword(["225/75R16"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ CONTINENTAL LT RA33",
+    "_Marca:_ CONTINENTAL",
+    "_Existencia:_ 2",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow26560R18 = addKeyword(["265/60R18"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ RA33",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 8",
+    "_Uso:_ ",
+    "_Precio:_ $",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow22570R195 = addKeyword(["225/70R19.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ AH35",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 7",
+    "_Uso:_ Lineal",
+    "_Precio:_ $5,000.00",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ FS 561",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 8",
+    "_Uso:_ Dirección",
+    "_Precio:_ $6,385.08",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ AT 501",
+    "_Marca:_ AMULET",
+    "_Existencia:_ 8",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow23585R16 = addKeyword(["235/85R16"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ DYNAPRO AT2",
+    "_Marca:_  HANKOOK",
+    "_Existencia:_ 2",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow18560R14 = addKeyword(["185/60R14"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+    "*Opción 1:*",
+    "_Modelo:_ H724 ",
+    "_Marca:_  HANKOOK",
+    "_Existencia:_ 4",
+    "_Uso:_ Lineal",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow25570R225 = addKeyword(["255/70R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ DT966",
+    "_Marca:_  LANDY",
+    "_Existencia:_ 5",
+    "_Uso:_ ",
+    "_Precio:_ ",
+     
+    "\n*Opción 2:*",
+    "_Modelo:_ CPS21 16C",
+    "_Marca:_ COMPASAL",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow23575R175 = addKeyword(["235/75R17.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "*Opción 1:*",
+    "_Modelo:_ RM 170",
+    "_Marca:_  ROADMASTER",
+    "_Existencia:_ 6",
+    "_Uso:_ Lineal",
+    "_Precio:_ $3,750.00",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ GA 277",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 6",
+    "_Uso:_ ",
+    "_Precio:_ 2,950.00",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ GA 277",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 6",
+    "_Uso:_ Lineal",
+    "_Precio:_ $2,950.00",
+
+    "\n*Opción 4:*",
+    "_Modelo:_ CPS21",
+    "_Marca:_ COMPASAL",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow20575R16C = addKeyword(["205/75R16C"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ R249",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 4",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow27580R225 = addKeyword(["275/80R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ R268 ",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 42",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow30575R245 = addKeyword(["305/75R24.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+    "\n*Opción 1:*",
+    "_Modelo:_ RH630",
+    "_Marca:_ ROADX",
+    "_Existencia:_ 12",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ R260",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 6",
+    "_Uso:_ Dirección",
+    "_Precio:_ $10,569.80",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow24570R195 = addKeyword(["245/70R19.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ RM 170 ",
+    "_Marca:_ ROADMASTER",
+    "_Existencia:_ 21",
+    "_Uso:_ Lineal",
+    "_Precio:_ $3,828.00",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ R238",
+    "_Medida:_ BRIDGESTONE",
+    "_Existencia:_ 8",
+    "_Uso:_ Dirección",
+    "_Precio:_ $7,497.44",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow21575R175 = addKeyword(["215/75R17.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ GA 277",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 5",
+    "_Uso:_ ",
+    "_Precio:_ 2,750.00",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ GD 277",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 5",
+    "_Uso:_ Lineal",
+    "_Precio:_ $2,750.00",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ R238",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 6",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,790.03",
+
+    "\n*Opción 4:*",
+    "_Modelo:_ RM 272",
+    "_Marca:_ ROADMASTER",
+    "_Existencia:_ 10",
+    "_Uso:_ Lineal",
+    "_Precio:_ $3,950.00",
+
+    "\n*Opción 5:*",
+    "_Modelo:_ AH35",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 7",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 6:*",
+    "_Modelo:_ FS 561",
+    "_Medida:_ 215/75R17.5",
+    "_Existencia:_ 20",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,685.11",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow29580R225 = addKeyword(["295/80R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ R163ZTL3",
+    "_Marca:_  BRIDGESTONE",
+    "_Existencia:_ 4",
+    "_Uso:_ Dirección",
+    "_Precio:_ $9,809.80",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ R269",
+    "_Marca:_  BRIDGESTONE",
+    "_Existencia:_ 10",
+    "_Uso:_ Dirección",
+    "_Precio:_ $9,769.63",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ RY537 TL",
+    "_Marca:_ YOKAHAMA",
+    "_Existencia:_ 2",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow28575R245 = addKeyword(["285/75R24.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ HS205",
+    "_Marca:_ KASPEN",
+    "_Existencia:_ 10",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ M726",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 2",
+    "_Uso:_ Tracción",
+    "_Precio:_ $10,345.29",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ R283 S",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 33",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,054.87",
+
+    "\n*Opción 4:*",
+    "_Modelo:_ FS 591",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 6",
+    "_Uso:_ Dirección",
+    "_Precio:_ $7,815.73",
+
+    "\n*Opción 5:*",
+    "_Modelo:_ GD 267",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 4",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,200.00",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow31580R225 = addKeyword(["315/80R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ FS 400",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 8",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,830.72",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ R249",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 20",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,344.61",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ M843",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 19",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow29575R225 = addKeyword(["295/75R22.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ R268",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 11",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,772.28",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ M726",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 11",
+    "_Uso:_ Tracción",
+    "_Precio:_ $8,712.47",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ DR520",
+    "_Marca:_ TOLEDO",
+    "_Existencia:_ 58",
+    "_Uso:_ Tracción",
+    "_Precio:_ ",
+
+    "\n*Opción 4:*",
+    "_Modelo:_ DR120",
+    "_Marca:_ TOLEDO",
+    "_Existencia:_ 42",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,290.00",
+
+    "*\nOpción 5:*",
+    "_Modelo:_ PM216",
+    "_Marca:_ PACE",
+    "_Existencia:_ 0",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,340.00",
+
+    "\n*Opción 6:*",
+    "_Modelo:_ GD 267",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 0",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,400.00",
+
+    "\n*Opción 7:*",
+    "_Modelo:_ FS 591",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 16",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,766.84",
+
+    "\n*Opción 8:*",
+    "_Modelo:_ FT 492",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 8",
+    "_Uso:_ Dirección",
+    "_Precio:_ $6,983.23",
+
+    "\n*Opción 9:*",
+    "_Modelo:_ AL21",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 8",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 10:*",
+    "_Modelo:_ TL21",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 6",
+    "_Uso:_ Arrastre",
+    "_Precio:_ $5,550.00",
+
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow11R245 = addKeyword(["11R24.5"]).addAnswer(
+  [
+    "📏 Estock disponible en esta medida",
+
     "\n*Opción 1:*",
     "_Modelo:_ M726",
-    "_Medida:_ 11R22.5",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 70",
+    "_Uso:_ Tracción",
+    "_Precio:_ $10,147.86",
+
+    "\n*Opción 2:*",
+    "_Modelo:_ M729",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 4",
+    "_Uso:_ Tracción",
+    "_Precio:_ $9,778.08",
+
+    "\n*Opción 3:*",
+    "_Modelo:_ R123",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 6",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,151.77",
+
+    "\n*Opción 4:*",
+    "_Modelo:_ R283 S",
+    "_Marca:_ BRIDGESTONE",
+    "_Existencia:_ 26",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,911.90",
+
+    "\n*Opción 5:*",
+    "_Modelo:_ GA257",
+    "Marca:_ TURNPIKE",
+    "_Existencia:_ 54",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,500.00",
+
+    "\n*Opción 6:*",
+    "_Modelo:_ D691",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 2",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,370.00",
+
+    "\n*Opción 7:*",
+    "_Modelo:_ GA 336",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 8",
+    "_Uso:_ Mixta",
+    "_Precio:_ $4,500.00",
+
+    "\n*Opción 8:*",
+    "_Modelo:_ GD 267",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 38",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,770.00",
+
+    "*\nOpción 9:*",
+    "_Modelo:_ BD171",
+    "_Marca:_ BLACKLION",
+    "_Existencia:_ 2",
+    "_Uso:_ Tracción",
+    "_Precio:_ ",
+
+    "*\nOpción 10:*",
+    "_Modelo:_ BD189",
+    "_Marca:_ BLACKLION",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "*\nOpción 11:*",
+    "_Modelo:_ DR520",
+    "_Marca:_ TOLEDO",
+    "_Existencia:_ 0",
+    "_Uso:_ Tracción",
+    "_Precio:_ ",
+
+    "\n*Opción 12:*",
+    "_Modelo:_ MG111",
+    "_Marca:_ MIRAGE",
+    "_Existencia:_ 11",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,550.00",
+
+    "\n*Opción 13:*",
+    "_Modelo:_ PM216",
+    "_Marca:_ PACE",
+    "_Existencia:_ 0",
+    "_Uso:_ Dirección",
+    "_Precio:_ ",
+
+    "\n*Opción 14:*",
+    "_Modelo:_ PM516",
+    "_Marca:_ PACE",
+    "_Existencia:_ 28",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,060.00",
+
+    "\n*Opción 15:*",
+    "_Modelo:_ DD398",
+    "_Marca:_ LANDY",
+    "_Existencia:_ 4",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,370.00",
+
+    "\n*Opción 16:*",
+    "_Modelo:_ DS968",
+    "_Marca:_ LANDY",
+    "_Existencia:_ 1",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,100.00",
+
+    "\n*Opción 17:*",
+    "_Modelo:_ DS966",
+    "_Marca:_ LANDY",
+    "_Existencia:_ 1",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,100.00",
+
+    "\n*Opción 18:*",
+    "_Modelo:_ CPD86",
+    "_Marca:_ COMPASAL",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 19:*",
+    "_Modelo:_ CPS60 M",
+    "_Marca:_ COMPASAL",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 20:*",
+    "_Modelo:_ EUDEMON UD120",
+    "_Marca:_ EUDEMON",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 21:*",
+    "_Modelo:_ KAPSEM HS205",
+    "_Marca:_ KAPSEM",
+    "_Existencia:_ 10",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 22:*",
+    "_Modelo:_ GOODRIDE CR989",
+    "_Marca:_ GOODRIDE",
+    "_Existencia:_ 4",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 23:*",
+    "_Modelo:_ DOUBLE STAR DSR668",
+    "_Marca:_ DOUBLE STAR",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 24:*",
+    "_Modelo:_ ROUTE CONTROL S",
+    "_Marca:_ ROUTE CONTROL",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 25:*",
+    "_Modelo:_ UD120",
+    "_Marca:_ EUDEMON",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 26:*",
+    "_Modelo:_ FD663",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 83",
+    "_Uso:_ Tracción",
+    "_Precio:_ $8,587.57",
+
+    "\n*Opción 27:*",
+    "_Modelo:_ FS 591",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 81",
+    "_Uso:_ Dirección",
+    "_Precio:_ $7,643.11",
+
+    "\n*Opción 28:*",
+    "_Modelo:_ FT 492",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 13",
+    "_Uso:_ Dirección",
+    "_Precio:_ $7,167.63",
+
+    "\n*Opción 29:*",
+    "_Modelo:_ FD 694",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 16",
+    "_Uso:_ Dirección",
+    "_Precio:_ $9,178.15",
+
+    "\n*Opción 30:*",
+    "_Modelo:_ AL21",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 2",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,400.00",
+
+    "\n*Opción 31:*",
+    "_Modelo:_ AH37",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 0",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 32:*",
+    "_Modelo:_ AL21 LINEAL",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 12",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 33:*",
+    "_Modelo:_ DM04 T",
+    "_Marca:_ HANKOOK",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 34:*",
+    "_Modelo:_ UZ02 T",
+    "_Marca:_ AURORA",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 35:*",
+    "_Modelo:_ AF18",
+    "_Marca:_ AUFINE",
+    "_Existencia:_ 1",
+    "_Uso:_ MIXTO",
+    "_Precio:_ ",
+
+    "\n*Opción 36:*",
+    "_Modelo:_ RM 230",
+    "_Marca:_ ROADMASTER",
+    "_Existencia:_ 11",
+    "_Uso:_ MIXTO",
+    "_Precio:_ ",
+
+    "\n*Opción 37:*",
+    "_Modelo:_ 101ZL SPEC-2BWTL",
+    "_Marca:_ YOKOHOMA",
+    "_Existencia:_ 1",
+    "_Uso:_ MIXTO",
+    "_Precio:_ ",
+
+    
+    "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
+  ],
+  null,
+  null,
+  [flowSecundario]
+);
+
+const flow11R225 = addKeyword(["11R22.5"]).addAnswer(
+  [
+    "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone *mas IVA*",
+
+    "\n*Opción 1:*",
+    "_Modelo:_ M726",
+    "_Marca:_ Bridgestone",
     "_Existencia:_ 48",
     "_Uso:_ Tracción",
     "_Precio:_ $9,602.10",
 
     "\n*Opción 2:*",
-    "_Modelo:_ M726",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 70",
-    "_Uso:_ Tracción",
-    "_Precio:_ $10,147.86",
+    "_Modelo:_ R283 A",
+    "_Marca:_ Bridgestone",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
 
     "\n*Opción 3:*",
-    "_Modelo:_ M726",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 11",
-    "_Uso:_ Tracción",
-    "_Precio:_ $8,712.47",
-
-    "\n*Opción 4:*",
-    "_Modelo:_ M729",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 4",
-    "_Uso:_ Tracción",
-    "_Precio:_ $9,778.08",
-
-    "\n*Opción 5:*",
-    "_Modelo:_ M726",
-    "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 2",
-    "_Uso:_ Tracción",
-    "_Precio:_ $10,345.29",
-
-    "\n*Opción 6:*",
-    "_Modelo:_ R123",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,151.77",
-
-    "\n*Opción 7:*",
-    "_Modelo:_ R163ZTL3",
-    "_Medida:_ 295/80R22.5",
-    "_Existencia:_ 4",
-    "_Uso:_ Dirección",
-    "_Precio:_ $9,809.80",
-
-    "\n*Opción 8:*",
     "_Modelo:_ R213",
-    "_Medida:_ 11R22.5",
+    "_Marca:_ Bridgestone",
     "_Existencia:_ 6",
     "_Uso:_ Dirección",
     "_Precio:_ $9,026.74",
 
-    "\n*Opción 9:*",
-    "_Modelo:_ R249",
-    "_Medida:_ 315/80R22.5",
-    "_Existencia:_ 20",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,344.61",
-
-    "\n*Opción 10:*",
-    "_Modelo:_ R238",
-    "_Medida:_ 215/75R17.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Dirección",
-    "_Precio:_ $4,790.03",
-
-    "\n*Opción 11:*",
-    "_Modelo:_ R238",
-    "_Medida:_ 245/70R19.5",
-    "_Existencia:_ 8",
-    "_Uso:_ Dirección",
-    "_Precio:_ $7,497.44",
-
-    "\n*Opción 12:*",
-    "_Modelo:_ R260",
-    "_Medida:_ 305/75R24.5",
-    "_Existencia:_ 6",
-    "_Uso:_ Dirección",
-    "_Precio:_ $10,569.80",
-
-    "\n*Opción 13:*",
-    "_Modelo:_ R268",
-    "_Medida:_ 295/75R22.5",
-    "_Existencia:_ 11",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,772.28",
-
-    "\n*Opción 14:*",
-    "_Modelo:_ R269",
-    "_Medida:_ 295/80R22.5",
-    "_Existencia:_ 10",
-    "_Uso:_ Dirección",
-    "_Precio:_ $9,769.63",
-
-    "\n*Opción 15:*",
+    "\n*Opción 4:*",
     "_Modelo:_ R283 S",
-    "_Medida:_ 11R22.5",
+    "_Marca:_ Bridgestone",
     "_Existencia:_ 18",
     "_Uso:_ Dirección",
     "_Precio:_ $8,575.40",
 
-    "\n*Opción 16:*",
-    "_Modelo:_ R283 S",
-    "_Medida:_ 11R24.5",
-    "_Existencia:_ 26",
-    "_Uso:_ Dirección",
-    "_Precio:_ $8,911.90",
-
-    "\n*Opción 17:*",
+    "\n*Opción 5:*",
     "_Modelo:_ R123 ECOPIA",
-    "_Medida:_ 11R22.5",
+    "_Marca:_ Bridgestone",
     "_Existencia:_ 16",
     "_Uso:_ Dirección",
     "_Precio:_ $7,768.28",
 
-    "\n*Opción 18:*",
+    "\n*Opción 6:*",
     "_Modelo:_ R283 S",
-    "_Medida:_ 295/75R22.5",
+    "_Marca:_ Bridgestone22.5",
     "_Existencia:_ 0",
     "_Uso:_ Dirección",
     "_Precio:_ $8,465.78",
 
-    "\n*Opción 19:*",
-    "_Modelo:_ R283 S",
-    "_Medida:_ 285/75R24.5",
-    "_Existencia:_ 33",
+    "\n*Opción 7:*",
+    "_Modelo:_ GA257",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 47",
     "_Uso:_ Dirección",
-    "_Precio:_ $8,054.87",
+    "_Precio:_ $4,100.00",
 
-    // "M843         315/80R22.5         19",
-    // "R268         275/80R22.5         42",
-    // "R249         205/75R16C           4",
-    // "R283 A         11R22.5            1",
+    "\n*Opción 8:*",
+    "_Modelo:_ M879",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 10",
+    "_Uso:_ Mixta",
+    "_Precio:_ $3,400.00",
+
+    "\n*Opción 9:*",
+    "_Modelo:_ GA 336",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 4",
+    "_Uso:_ Mixta",
+    "_Precio:_ $4,100.00",
+
+    "\n*Opción 10:*",
+    "_Modelo:_ GD 267",
+    "_Marca:_ TURNPIKE",
+    "_Existencia:_ 50",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,450.00",
+
+    "\n*Opción 11:*",
+    "_Modelo:_ BD171",
+    "_Marca:_ BLACKLION",
+    "_Existencia:_ 0",
+    "_Uso:_ Tracción",
+    "_Precio:_ ",
+
+    "\n*Opción 12:*",
+    "_Modelo:_ DR120",
+    "_Marca:_ TOLEDO",
+    "_Existencia:_ 22",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,250.00",
+
+    "\n*Opción 13:*",
+    "_Modelo:_ DR120",
+    "_Marca:_ TOLEDO",
+    "_Existencia:_ 22",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,250.00",
+
+    "\n*Opción 14:*",
+    "_Modelo:_ MG111",
+    "_Marca:_ MIRAGE",
+    "_Existencia:_ 79",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,100.00",
+
+    "\n*Opción 15:*",
+    "_Modelo:_ MG312",
+    "_Marca:_ MIRAGE",
+    "_Existencia:_ 0",
+    "_Uso:_ Tracción",
+    "_Precio:_ $4,305.00",
+    "\n",
+
+    "\n*Opción 16:*",
+    "_Modelo:_ PM216",
+    "_Marca:_ PACE",
+    "_Existencia:_ 53",
+    "_Uso:_ Dirección",
+    "_Precio:_ $3,560.00",
+
+    "\n*Opción 17:*",
+    "_Modelo:_ DT966",
+    "Marca:_ LANDY",
+    "_Existencia:_ 10",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,370.00",
+
+    "\n*Opción 18:*",
+    "_Modelo:_ DT966",
+    "_Medida:_ LANDY",
+    "_Existencia:_ 10",
+    "_Uso:_ Dirección",
+    "_Precio:_ $4,370.00",
+
+    "\n*Opción 19:*",
+    "_Modelo:_ BT 168N",
+    "_Marca:_ RUNKING",
+    "_Existencia:_ 36",
+    "_Uso:_ Mixta",
+    "_Precio:_ $4,150.00",
+
+    "\n*Opción 20:*",
+    "_Modelo:_ GOODRIDE CR989",
+    "_Marca:_ GOODRIDE",
+    "_Existencia:_ 6",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 21:*",
+    "_Modelo:_ FD663",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 24",
+    "_Uso:_ Tracción",
+    "_Precio:_ $8,081.92",
+
+    "\n*Opción 22:*",
+    "_Modelo:_ FS 591",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 60",
+    "_Uso:_ Dirección",
+    "_Precio:_ $7,391.23",
+
+    "\n*Opción 23:*",
+    "_Modelo:_ FD 694",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 16",
+    "_Uso:_ Dirección",
+    "_Precio:_ $8,656.93",
+
+    "\n*Opción 24:*",
+    "_Modelo:_ FT 492",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 0",
+    "_Uso:_ Dirección",
+    "_Precio:_ $6,815.71",
+
+    "\n*Opción 25:*",
+    "_Modelo:_ FD691",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 4",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 26:*",
+    "_Modelo:_ FS 561",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 14",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 27:*",
+    "_Modelo:_ FS 820",
+    "_Marca:_ FIRESTONE",
+    "_Existencia:_ 1",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 28:*",
+    "_Modelo:_ RT 606",
+    "_Marca:_ DOUBLE COIN",
+    "_Existencia:_ 5",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
+    "\n*Opción 29:*",
+    "_Modelo:_ 101ZL SPEC-2BWTL",
+    "_Marca:_ YOKOHAMA",
+    "_Existencia:_ 8",
+    "_Uso:_ ",
+    "_Precio:_ ",
+
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
   ],
   null,
@@ -816,25 +1226,65 @@ const flowPrincipal = addKeyword(["hola", "buenos días", "martin"])
   .addAnswer("🙌 Hola bienvenido al almacen")
   .addAnswer(
     [
-      "Escribe una de las siguientes palabras para ver mas detalles",
-      "👉 *Bridgestone* para ver medidas bridgestone",
-      "👉 *China*  para ver medidas de llanta china",
-      "👉 *DoubleCoin* para ver medidas de llanta DoubleCoin",
-      "👉 *Firestone* para ver medidas de llanta Firestone",
-      "👉 *Hankook* para ver medidas de llanta Hankook",
-      "👉 *Roadmaster* para ver medidas de llanta Roadmaster",
-      "👉 *Yokohoma* para ver medidas de llanta Yokohoma",
+      "Escribe una de las siguientes MEDIDAS para ver las llantas disponibles.",
+      "👉 *11R22.5*",
+      "👉 *11R24.5*",
+      "👉 *295/75R22.5*",
+      "👉 *315/80R22.5*",
+      "👉 *285/75R24.5*",
+      "👉 *295/80R22.5*",
+      "👉 *215/75R17.5*",
+      "👉 *245/70R19.5*",
+      "👉 *305/75R24.5*",
+      "👉 *275/80R22.5*",
+      "👉 *205/75R16C*",
+      "👉 *235/75R17.5*",
+      "👉 *255/70R22.5*",
+      "👉 *185/60R14*",
+      "👉 *235/85R16*",
+      "👉 *225/70R19.5*",
+      "👉 *265/60R18*",
+      "👉 *225/75R16*",
+      "👉 *275/70R22.5*",
+      "👉 *P235/75R15*",
+      "👉 *195 R15*",
+      "👉 *185/60R15*",
+      "👉 *205/55R16*",
+      "👉 *265/70R17*",
+      "👉 *225/40R18*",
+      "👉 *225/65R16C*",
+      "👉 *INDUSTRIAL*",
     ],
     null,
     null,
     [
-      flowFirestone,
-      flowChina,
-      flowDoubleCoin,
-      flowBridgestone,
-      flowHankook,
-      flowRoadmaster,
-      flowYokohoma,
+      flow11R225,
+      flow11R245,
+      flow29575R225,
+      flow31580R225,
+      flow28575R245,
+      flow29580R225,
+      flow21575R175,
+      flow24570R195,
+      flow30575R245,
+      flow27580R225,
+      flow20575R16C,
+      flow23575R175,
+      flow25570R225,
+      flow18560R14,
+      flow23585R16,
+      flow22570R195,
+      flow26560R18,
+      flow22575R16,
+      flow27570R225,
+      flowP23575R15,
+      flow195R15,
+      flow18560R15,
+      flow20555R16,
+      flow26570R17,
+      flow22540R18,
+      flow22565R16C,
+      flowINDUSTRIAL, 
     ]
   );
 
