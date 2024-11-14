@@ -124,7 +124,6 @@ const flow22540R18 = addKeyword(["225/40R18"]).addAnswer(
     "_Uso:_ ",
     "_Precio:_ 3,100.00",
     
-
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
   ],
   null,
