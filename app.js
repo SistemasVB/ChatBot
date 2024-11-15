@@ -13,8 +13,9 @@ const flowSecundario = addKeyword(["2", "siguiente"]).addAnswer([
   "Se ha terminado el flujo, vuelva a mandar un hola para ver el menú.",
 ]);
 
-const flowINDUSTRIAL = addKeyword(["INDUSTRIAL"]).addAnswer(
+const flowINDUSTRIAL = addKeyword(["24"]).addAnswer(
   [
+    // INDUSTRIAL
     "📏 Estock disponible en esta medida",
     
     "*Opción 1:*",
@@ -113,8 +114,9 @@ const flowINDUSTRIAL = addKeyword(["INDUSTRIAL"]).addAnswer(
 //   [flowSecundario]
 // );
 
-const flow22540R18 = addKeyword(["225/40R18"]).addAnswer(
+const flow22540R18 = addKeyword(["23"]).addAnswer(
   [
+    // 225/40R18
     "📏 Estock disponible en esta medida",
     
     "\n*Opción 1:*",
@@ -131,8 +133,9 @@ const flow22540R18 = addKeyword(["225/40R18"]).addAnswer(
   [flowSecundario]
 );
 
-const flow26570R17 = addKeyword(["265/70R17"]).addAnswer(
+const flow26570R17 = addKeyword(["22"]).addAnswer(
   [
+    // 265/70R17
     "📏 Estock disponible en esta medida",
     
     "\n*Opción 1:*",
@@ -167,8 +170,9 @@ const flow26570R17 = addKeyword(["265/70R17"]).addAnswer(
 //   [flowSecundario]
 // );
 
-const flow18560R15 = addKeyword(["185/60R15"]).addAnswer(
+const flow18560R15 = addKeyword(["21"]).addAnswer(
   [
+    // 185/60R15
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -185,8 +189,9 @@ const flow18560R15 = addKeyword(["185/60R15"]).addAnswer(
   [flowSecundario]
 );
 
-const flow195R15 = addKeyword(["195 R15"]).addAnswer(
+const flow195R15 = addKeyword(["20"]).addAnswer(
   [
+    // 195 R15
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -221,8 +226,9 @@ const flow195R15 = addKeyword(["195 R15"]).addAnswer(
 //   [flowSecundario]
 // );
 
-const flow27570R225 = addKeyword(["275/70R22.5"]).addAnswer(
+const flow27570R225 = addKeyword(["19"]).addAnswer(
   [
+    // 275/70R22.5
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -239,8 +245,9 @@ const flow27570R225 = addKeyword(["275/70R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow22575R16 = addKeyword(["225/75R16"]).addAnswer(
+const flow22575R16 = addKeyword(["18"]).addAnswer(
   [
+    // 225/75R16
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -257,8 +264,9 @@ const flow22575R16 = addKeyword(["225/75R16"]).addAnswer(
   [flowSecundario]
 );
 
-const flow26560R18 = addKeyword(["265/60R18"]).addAnswer(
+const flow26560R18 = addKeyword(["17"]).addAnswer(
   [
+    // 265/60R18
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -275,8 +283,9 @@ const flow26560R18 = addKeyword(["265/60R18"]).addAnswer(
   [flowSecundario]
 );
 
-const flow22570R195 = addKeyword(["225/70R19.5"]).addAnswer(
+const flow22570R195 = addKeyword(["16"]).addAnswer(
   [
+    // 225/70R19.5
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -307,8 +316,9 @@ const flow22570R195 = addKeyword(["225/70R19.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow23585R16 = addKeyword(["235/85R16"]).addAnswer(
+const flow23585R16 = addKeyword(["15"]).addAnswer(
   [
+    // 235/85R16
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -325,8 +335,9 @@ const flow23585R16 = addKeyword(["235/85R16"]).addAnswer(
   [flowSecundario]
 );
 
-const flow18560R14 = addKeyword(["185/60R14"]).addAnswer(
+const flow18560R14 = addKeyword(["14"]).addAnswer(
   [
+    // 185/60R14
     "📏 Estock disponible en esta medida",
     "*Opción 1:*",
     "_Modelo:_ H724 ",
@@ -342,8 +353,9 @@ const flow18560R14 = addKeyword(["185/60R14"]).addAnswer(
   [flowSecundario]
 );
 
-const flow25570R225 = addKeyword(["255/70R22.5"]).addAnswer(
+const flow25570R225 = addKeyword(["13"]).addAnswer(
   [
+    // 255/70R22.5
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -367,8 +379,9 @@ const flow25570R225 = addKeyword(["255/70R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow23575R175 = addKeyword(["235/75R17.5"]).addAnswer(
+const flow23575R175 = addKeyword(["12"]).addAnswer(
   [
+    // 235/75R17.5
     "📏 Estock disponible en esta medida",
 
     "*Opción 1:*",
@@ -399,8 +412,9 @@ const flow23575R175 = addKeyword(["235/75R17.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow20575R16C = addKeyword(["205/75R16C"]).addAnswer(
+const flow20575R16C = addKeyword(["11"]).addAnswer(
   [
+    // 205/75R16C
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -417,8 +431,9 @@ const flow20575R16C = addKeyword(["205/75R16C"]).addAnswer(
   [flowSecundario]
 );
 
-const flow27580R225 = addKeyword(["275/80R22.5"]).addAnswer(
+const flow27580R225 = addKeyword(["10"]).addAnswer(
   [
+    // 275/80R22.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -435,8 +450,9 @@ const flow27580R225 = addKeyword(["275/80R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow30575R245 = addKeyword(["305/75R24.5"]).addAnswer(
+const flow30575R245 = addKeyword(["9"]).addAnswer(
   [
+    // 305/75R24.5
     "📏 Estock disponible en esta medida",
     "\n*Opción 1:*",
     "_Modelo:_ RH630",
@@ -459,8 +475,9 @@ const flow30575R245 = addKeyword(["305/75R24.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow24570R195 = addKeyword(["245/70R19.5"]).addAnswer(
+const flow24570R195 = addKeyword(["8"]).addAnswer(
   [
+    // 245/70R19.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -491,8 +508,9 @@ const flow24570R195 = addKeyword(["245/70R19.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow21575R175 = addKeyword(["215/75R17.5"]).addAnswer(
+const flow21575R175 = addKeyword(["7"]).addAnswer(
   [
+    // 215/75R17.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -544,8 +562,9 @@ const flow21575R175 = addKeyword(["215/75R17.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow29580R225 = addKeyword(["295/80R22.5"]).addAnswer(
+const flow29580R225 = addKeyword(["6"]).addAnswer(
   [
+    // 295/80R22.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -576,8 +595,9 @@ const flow29580R225 = addKeyword(["295/80R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow28575R245 = addKeyword(["285/75R24.5"]).addAnswer(
+const flow28575R245 = addKeyword(["5"]).addAnswer(
   [
+    // 285/75R24.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -622,8 +642,9 @@ const flow28575R245 = addKeyword(["285/75R24.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow31580R225 = addKeyword(["315/80R22.5"]).addAnswer(
+const flow31580R225 = addKeyword(["4"]).addAnswer(
   [
+    // 315/80R22.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -654,8 +675,9 @@ const flow31580R225 = addKeyword(["315/80R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow29575R225 = addKeyword(["295/75R22.5"]).addAnswer(
+const flow29575R225 = addKeyword(["3"]).addAnswer(
   [
+    // 295/75R22.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -733,7 +755,7 @@ const flow29575R225 = addKeyword(["295/75R22.5"]).addAnswer(
     "_Marca:_ BRIDGESTONE",
     "_Existencia:_ 1",
     "_Uso:_ ",
-    "_Precio:_ $",
+    "_Precio:_ $8,889.07",
 
     "\n*2* Para terminar el flujo y vuelve a mandar un hola.",
   ],
@@ -742,8 +764,9 @@ const flow29575R225 = addKeyword(["295/75R22.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow11R245 = addKeyword(["11R24.5"]).addAnswer(
+const flow11R245 = addKeyword(["2"]).addAnswer(
   [
+    // 11R24.5
     "📏 Estock disponible en esta medida",
 
     "\n*Opción 1:*",
@@ -1006,8 +1029,9 @@ const flow11R245 = addKeyword(["11R24.5"]).addAnswer(
   [flowSecundario]
 );
 
-const flow11R225 = addKeyword(["11R22.5"]).addAnswer(
+const flow11R225 = addKeyword(["1"]).addAnswer(
   [
+    // 11R22.5
     "📏 Estas son los precios de las medidas y modelos disponibles en bridgestone *mas IVA*",
 
     "\n*Opción 1:*",
@@ -1218,33 +1242,33 @@ const flowPrincipal = addKeyword(["hola", "buenos días", "martin"])
   .addAnswer(
     [
       "Escribe una de las siguientes MEDIDAS para ver las llantas disponibles.",
-      "👉 *11R22.5*",
-      "👉 *11R24.5*",
-      "👉 *295/75R22.5*",
-      "👉 *315/80R22.5*",
-      "👉 *285/75R24.5*",
-      "👉 *295/80R22.5*",
-      "👉 *215/75R17.5*",
-      "👉 *245/70R19.5*",
-      "👉 *305/75R24.5*",
-      "👉 *275/80R22.5*",
-      "👉 *205/75R16C*",
-      "👉 *235/75R17.5*",
-      "👉 *255/70R22.5*",
-      "👉 *185/60R14*",
-      "👉 *235/85R16*",
-      "👉 *225/70R19.5*",
-      "👉 *265/60R18*",
-      "👉 *225/75R16*",
-      "👉 *275/70R22.5*",
+      "👉 *1) 11R22.5*",
+      "👉 *2) 11R24.5*",
+      "👉 *3) 295/75R22.5*",
+      "👉 *4) 315/80R22.5*",
+      "👉 *5) 285/75R24.5*",
+      "👉 *6) 295/80R22.5*",
+      "👉 *7) 215/75R17.5*",
+      "👉 *8) 245/70R19.5*",
+      "👉 *9) 305/75R24.5*",
+      "👉 *10) 275/80R22.5*",
+      "👉 *11) 205/75R16C*",
+      "👉 *12) 235/75R17.5*",
+      "👉 *13) 255/70R22.5*",
+      "👉 *14) 185/60R14*",
+      "👉 *15) 235/85R16*",
+      "👉 *16) 225/70R19.5*",
+      "👉 *17) 265/60R18*",
+      "👉 *18) 225/75R16*",
+      "👉 *19) 275/70R22.5*",
       // "👉 *P235/75R15*",
-      "👉 *195 R15*",
-      "👉 *185/60R15*",
+      "👉 *20) 195 R15*",
+      "👉 *21) 185/60R15*",
       // "👉 *205/55R16*",
-      "👉 *265/70R17*",
-      "👉 *225/40R18*",
+      "👉 *22) 265/70R17*",
+      "👉 *23) 225/40R18*",
       // "👉 *225/65R16C*",
-      "👉 *INDUSTRIAL*",
+      "👉 *24) INDUSTRIAL*",
     ],
     null,
     null,
