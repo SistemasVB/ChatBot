@@ -1,0 +1,26 @@
+[handleMsg]:  {
+  key: MessageKey {
+    remoteJid: '120363259805107425@g.us',
+    fromMe: false,
+    id: '3A66A4E92A1891054AA3',
+    participant: '5214641365793@s.whatsapp.net'
+  },
+  update: { pollUpdates: [ [Object] ] },
+  body: 'Probablemente asistiré',
+  from: '120363259805107425@g.us',
+  pushName: 'Braulio Cr',
+  broadcast: false,
+  messageTimestamp: 1732687225,
+  voters: Message {
+    messageContextInfo: MessageContextInfo {
+      messageSecret: <Buffer 17 be 85 e0 18 8d ce 1d e4 f6 9d f2 25 71 26 f8 c7 f8 2c 0b 05 67 a8 f7 01 1a 78 9c 5c 96 bb f0>
+    },
+    pollCreationMessageV3: PollCreationMessage {
+      options: [Array],
+      name: 'Rodada navideña 5 de diciembre',
+      selectableOptionsCount: 1,
+      contextInfo: [ContextInfo]
+    }
+  },
+  type: 'poll'
+}
